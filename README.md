@@ -45,14 +45,14 @@ scheme, referred to as IPFSz
 
 You'll need to add Go's bin directories to your $PATH environment variable e.g., by adding these lines to your /etc/profile (for a system-wide installation) or $HOME/.profile:
 
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$GOPATH/bin
-export PATH=/usr/local/cmake-3.26.3-linux-x86_64/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
-export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-export LD_LIBRARY_PATH=/usr/local/nvcomp:$LD_LIBRARY_PATH
-export PATH=$PATH:/usr/local/go/bin
+    export PATH=$PATH:/usr/local/go/bin
+    export PATH=$PATH:$GOPATH/bin
+    export PATH=/usr/local/cmake-3.26.3-linux-x86_64/bin:$PATH
+    export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+    export PATH=/usr/local/cuda-12.1/bin${PATH:+:${PATH}}
+    export LD_LIBRARY_PATH=/usr/local/cuda-12.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+    export LD_LIBRARY_PATH=/usr/local/nvcomp:$LD_LIBRARY_PATH
+    export PATH=$PATH:/usr/local/go/bin
 
 # Download and Compile IPFS
     $ git clone https://github.com/zcp/ipfs.git
