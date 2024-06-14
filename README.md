@@ -73,6 +73,8 @@ You'll need to add Go's bin directories to your $PATH environment variable e.g.,
 
 ## install native IPFS
     $ cd native_IPFS
+    $ unzip vendor.zip
     $ make install
 
 Our fine-grained compression strategy IPFS has all the source code dependencies in the "vendor" folder.
+When the vendor.zip file is extracted, the following items are obtained.
