@@ -10,12 +10,7 @@ Interplanetary File System (IPFS) network, a prominent peer-to-peer decentralize
 To address the issue, this paper presents a fine-grained compression scheme for the native IPFS protocol. Its primary concept is that blocks rather than files are considered as the smallest compressible units for block transmission, thereby ensuring the preservation of the data shareability with the protocol. To achieve the scheme, a three-layer architecture is firstly proposed and incorporated into the protocol as an independent compression component to support a variety of compression algorithms.
 Consequently, Exchange layer and Storage layer in the protocol are extended by leveraging the component to achieve block-level compression and decompression in the workflows of upload and download for block transmission acceleration over an IPFS network. Furthermore, a block pre-request block is proposed and incorporated into Exchange layer to improve the block request mechanism in the layer which frequently causes block request awaiting, reducing block provision speed for compression algorithms, thus downgrading the acceleration. A comprehensive evaluation indicates that this extended IPFS protocol by our scheme has the same level of data shareability as the native IPFS protocol, and contributes to a block transmission performance enhancement in download by up to 69% and in upload by as much as 201% relative to the current leading coarse-grained compression scheme, referred to as IPFSz.
 
-Featureset
-- Runs an IPFS-Node as a network service
-- [Command Line Interface](https://docs.ipfs.tech/reference/kubo/cli/) to IPFS-Nodes
-- Local [Web2-to-Web3 HTTP Gateway functionality](https://github.com/ipfs/specs/tree/main/http-gateways#readme)
-- HTTP RPC API (`/api/v0`) to access and control the daemon
-- IPFS's internal Webgui can be used to manage the Kubo nodes
+
 
 ## Table of Contents
 
